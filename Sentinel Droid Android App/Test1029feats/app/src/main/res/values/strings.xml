@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AUAntiMalware</string>
+    <string name="App_Status">This app is: </string>
+</resources>
