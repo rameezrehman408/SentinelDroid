@@ -4,11 +4,13 @@ An AI based Anti-Malware App/Engine
 
 # Introduction
 
-[add content here.]
+This is a project undertaken during my work at the Devices & Network Security Lab under [National Center for Cyber Security (NCCS)](https://www.nccs.pk/collaborations/academic-patners/air-university-islamabad) at Air University, Islamabad. This project has two major contributions:
+* Design and Development of a CNN based on features extracted during a static analysis of the Android Apps
+* Deployment of the trained model into the Mobile Device for on-device detection of Malicious Android Apps.
 
 # Detection Engine
 
-We have taken approach of using only static features in our phase-1. Static feature-based malware detection means that a malware/malicious file can be detected without the need to execute it. There are multiple techniques/features to be monitored but Wei Wang [1] provided a brief summary of the static features and highlighted Permissions and Intent-filters (available within manifest file of apk package) to be most promising. Therefore, we monitored these features to train a malware detection engine.
+In this phase, we have used only static features extracted from Android apps. Static feature-based malware detection means that the Application is not run/executed on any device but the source code is extracted and observed for malicious patterns. There are multiple techniques/features to be monitored but Wei Wang [1] provided a brief summary of the static features and highlighted Permissions and Intent-filters (available within manifest file of apk package) to be most promising. Therefore, we monitored these features to train a Neural Network model for malware detection.
 
 ## Dataset
 
@@ -45,12 +47,12 @@ https://developer.android.com/reference/android/content/pm/PackageManager#GET_PE
 
 Extraction of this features was relatively tough to implement. There doesn’t exist a built-in API to access the intent-filters from the manifest directly. Therefore, we had to resolve to the extracting the manifest file, then using the XML-parsers to extract intent-filters. We identified an open-source app that covered the extraction of manifest file and catered the XML parsing part, we included the intent filter extraction part into it ourselves and generated a list of intent-filters for a specific app.
 Link to Opensource App:
-[to be included if found.]
+[Not Available]
 
 ## Front End / UI
 
 The app’s front end is very simple, the app starts to display all the non-system apps into a recycler view as list items. User can click on any list item to calculate that app’s Malicious/Benign status and its confidence level.
-The functionality of the apps is discussed later.
+The functionality of the apps is birefly discussed later in the document.
 #### Structure of the app
 The app consists of the following four activities java files:
 
