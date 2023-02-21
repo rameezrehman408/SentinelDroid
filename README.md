@@ -1,6 +1,6 @@
 # SentinelDroid
 
-An AI based Malware Detection App built with Detection Engine part built on TensorFlow and TFLite and the on-device Malware Detection part implemented in Java.
+An AI based Malware Detection App built with Detection Engine part implemented in TensorFlow and TFLite and the on-device Malware Detection part in Java.
 
 # Introduction
 
